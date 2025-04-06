@@ -33,5 +33,19 @@
 */
 
 bool task02(int number) {
+    if (number < 0 || number > 9999) {
+        return false;
+    }
+
+    int num = number;
+    int dig = 0;
+    while(num != 0) {
+        dig = dig * 10 + num % 10;
+        num /= 10;
+    }
+    if (dig == number) {
+        return true;
+    }
+
     return false;
 }
