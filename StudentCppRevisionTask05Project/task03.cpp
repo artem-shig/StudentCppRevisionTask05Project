@@ -37,5 +37,8 @@
 */
 
 int task03(int v, int t) {
+	if (t < 0) {
+		return -1;
+	}
 	return 0;
 }

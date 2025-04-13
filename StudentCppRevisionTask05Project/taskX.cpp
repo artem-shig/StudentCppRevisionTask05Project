@@ -39,5 +39,9 @@
 */
 
 int taskX(int h, int a, int b) {
-	return 0;
+	if (b >= h || b >= a || a <= 0 || b <= 0 || h <= 0) {
+		return 0;
+	}
+
+	return (h - 2 * b + a - 1) / (a - b);
 }
